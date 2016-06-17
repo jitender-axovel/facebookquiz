@@ -193,8 +193,8 @@
                         <li>
                             <a href="javascript:;" data-toggle="collapse" data-target="#categoriesSubMenu"><i class="fa fa-fw fa-folder"></i> Categories <i class="fa fa-fw fa-caret-down"></i></a>
                             <ul id="categoriesSubMenu" class="collapse">
-                                <li><a href="javascript:void(0);{{--route('adminCategoriesAddEdit')--}}"><i class="fa fa-fw fa-plus"></i> Create</a></li>
-                                <li><a href="javascript:void(0);{{--route('adminCategories')--}}"><i class="fa fa-fw fa-eye"></i> View</a></li>
+                                <li><a href="{{route('adminCategoriesAddEdit')}}"><i class="fa fa-fw fa-plus"></i> Create</a></li>
+                                <li><a href="{{route('adminCategories')}}"><i class="fa fa-fw fa-eye"></i> View</a></li>
                             </ul>
                         </li>
                         <li>
