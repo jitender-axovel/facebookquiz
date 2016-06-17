@@ -185,7 +185,7 @@ class AdminController extends BaseController {
                 ];
                 $configFileContent =
                     '<?php return '. var_export($userCredentials, true) .';';
-                //dd($configFileContent);
+
                 try {
                     if(!file_put_contents($configFilePath, $configFileContent)) {
                         throw new Exception();
