@@ -228,13 +228,6 @@
                         <li class="">
                             <a href="javascript:void(0);{{--route('adminConfigLanuages')--}}"><i class="fa fa-fw fa-language"></i> Languages</a>
                         </li>
-                        <li>
-                            <a href="javascript:;" data-toggle="collapse" data-target="#pagesSubMenu"><i class="fa fa-fw fa-files-o"></i> Pages <i class="fa fa-fw fa-caret-down"></i></a>
-                            <ul id="pagesSubMenu" class="collapse">
-                                <li><a href="javascript:void(0);{{--url('/admin/pages/create')--}}"><i class="fa fa-fw fa-plus"></i> Create</a></li>
-                                <li><a href="javascript:void(0);{{--url('/admin/pages/view')--}}"><i class="fa fa-fw fa-eye"></i> View</a></li>
-                            </ul>
-                        </li>
                         <li><a href="{{ route('adminChangePassword') }}"><i class="fa fa-fw fa-key"></i> Change password</a></li>
                     </ul>
                 </div>
