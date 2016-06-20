@@ -21,7 +21,6 @@ Route::get('quizzes/{nameString}/{quizId}/r/{resultId}', array('as' => 'viewQuiz
 Route::post('quizzes/{nameString}/{quizId}/activity/{activityType}', array('as' => 'viewQuizRecordActivity', 'uses' => 'QuizController@activity'));
 Route::post('quizzes/{nameString}/{quizId}/user-results/', array('as' => 'viewQuizSaveUserResult', 'uses' => 'QuizController@saveUserResult'));
 Route::post('quizzes/{nameString}/{quizId}/user-answers/', array('as' => 'viewQuizSaveUserAnswer', 'uses' => 'QuizController@saveUserAnswer'));
-Route::get('pages/{nameString}.html', array('as' => 'viewPage', 'uses' => 'PageController@viewPage'));
 Route::get('category/{slug}', array('as' => 'category', 'uses' => 'QuizController@category'));
 
 Route::filter('adminAuth', function()
@@ -48,9 +47,6 @@ Route::group(array('before' => 'adminAuth'), function() {
 	Route::get('admin/quizes/view', array('as' => 'adminViewQuizes', 'uses' => 'AdminQuizesController@listQuizes'));
 	Route::match(array('GET', 'POST'), 'admin/quizes/create', array('as' => 'adminCreateQuiz', 'uses' => 'AdminQuizesController@createEdit'));
 	Route::match(array('POST'), 'admin/quizes/delete', array('as' => 'adminDeleteQuiz', 'uses' => 'AdminQuizesController@delete'));
-	Route::get('admin/pages/view', array('as' => 'adminViewPages', 'uses' => 'AdminPagesController@listPages'));
-	Route::match(array('GET', 'POST'), 'admin/pages/create', array('as' => 'adminCreatePage', 'uses' => 'AdminPagesController@createEdit'));
-	Route::match(array('GET', 'POST'), 'admin/pages/delete', array('as' => 'adminDeletePage', 'uses' => 'AdminPagesController@delete'));
 	Route::match(array('GET', 'POST'), 'admin/config', array('as' => 'adminConfig', 'uses' => 'AdminConfigController@index'));
 	Route::match(array('GET', 'POST'), 'admin/config/widgets', array('as' => 'adminConfigWidgets', 'uses' => 'AdminConfigController@widgets'));
 	Route::match(array('GET', 'POST'), 'admin/config/languages', array('as' => 'adminConfigLanuages', 'uses' => 'AdminConfigController@languages'));
