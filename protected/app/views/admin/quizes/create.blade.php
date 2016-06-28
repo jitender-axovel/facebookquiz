@@ -106,7 +106,8 @@
                                         @endforeach
                                     </form>
                                 @endif
-                                <br/><div class="alert alert-success">
+                                <br/>
+                                <div class="alert alert-success">
                                     <p>If you change the og image after publishing the quiz, Facebook may not update the image automatically because it caches the Open graph image the first time a user shares it.</p>
                                     <p><strong>So if you need to update the cached open graph data click on "debug og tags" and use the interface provided by facebook</strong></p>
                                     <p><a href="https://developers.facebook.com/tools/debug/og/object/" target="_blank" class="btn btn-primary">Debug OG data</a></p>

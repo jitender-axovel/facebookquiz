@@ -178,7 +178,7 @@
                 <!-- Top Menu Items -->
                 <ul class="nav navbar-right top-nav">
                     <li style="margin-right: 10px;">
-                        <a target="_blank" style="color: #ffffff; margin: 9px auto;padding: 5px 16px;" class="btn btn-success btn-block" href="javascript:void(0);{{--route('home')--}}">View Site</a>
+                        <a target="_blank" style="color: #ffffff; margin: 9px auto;padding: 5px 16px;" class="btn btn-success btn-block" href="{{route('home')}}">View Site</a>
                     </li>
                     <li >
                         <a href="{{ URL::route('adminLogout')}}"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
@@ -200,10 +200,10 @@
                         <li>
                             <a href="javascript:;" data-toggle="collapse" data-target="#quizSubMenu"><i class="fa fa-fw fa-file-text-o"></i> Quizzes <i class="fa fa-fw fa-caret-down"></i></a>
                             <ul id="quizSubMenu" class="collapse">
-                                <li><a href="javascript:void(0);{{--url('/admin/quizes/create')--}}"><i class="fa fa-fw fa-plus"></i> Create</a></li>
-                                <li><a href="javascript:void(0);{{--url('/admin/quizes/view')--}}"><i class="fa fa-fw fa-eye"></i> View</a></li>
-                                <li><a href="javascript:void(0);{{--route('adminConfigQuiz')--}}"><i class="fa fa-fw fa-wrench"></i> Config</a></li>
-                                <li><a href="javascript:void(0);{{--route('adminQuizesEmbedCodes')--}}"><i class="fa fa-fw fa-code"></i> Embed codes</a></li>
+                                <li><a href="{{url('/admin/quizes/create')}}"><i class="fa fa-fw fa-plus"></i> Create</a></li>
+                                <li><a href="{{url('/admin/quizes/view')}}"><i class="fa fa-fw fa-eye"></i> View</a></li>
+                                <li><a href="{{route('adminConfigQuiz')}}"><i class="fa fa-fw fa-wrench"></i> Config</a></li>
+                                <li><a href="{{route('adminQuizesEmbedCodes')}}"><i class="fa fa-fw fa-code"></i> Embed codes</a></li>
 
                             </ul>
                         </li>
@@ -223,10 +223,10 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="javascript:void(0);{{--url('/admin/config/widgets')--}}"><i class="fa fa-fw fa-puzzle-piece"></i> Widgets</a>
+                            <a href="{{url('/admin/config/widgets')}}"><i class="fa fa-fw fa-puzzle-piece"></i> Widgets</a>
                         </li>
                         <li class="">
-                            <a href="javascript:void(0);{{--route('adminConfigLanuages')--}}"><i class="fa fa-fw fa-language"></i> Languages</a>
+                            <a href="{{route('adminConfigLanuages')}}"><i class="fa fa-fw fa-language"></i> Languages</a>
                         </li>
                         <li><a href="{{ route('adminChangePassword') }}"><i class="fa fa-fw fa-key"></i> Change password</a></li>
                     </ul>

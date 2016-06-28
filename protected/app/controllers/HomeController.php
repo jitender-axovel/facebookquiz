@@ -17,7 +17,7 @@ class HomeController extends BaseController {
 
 	public function index()
 	{
-            return Redirect::to('admin');
+//            return Redirect::to('admin');
 		QuizController::_loadQuizes(['limit' => QuizController::PER_PAGE]);
 
 		$pageTitle = Config::get('siteConfig')['main']['siteTitle'];
